@@ -10,6 +10,8 @@ int shmid;
 segment * segment1;
 int semid;
 
+
+
 void initializations() {
     shmid = shmget(cle,0,0);
     if (shmid == -1) {
