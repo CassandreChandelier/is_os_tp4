@@ -63,8 +63,9 @@ build CMakeFiles/is_os_tp4.dir/main.c.o: C_COMPILER__is_os_tp4_unscanned_Debug /
 #############################################
 # Link the executable is_os_tp4
 
-build is_os_tp4: C_EXECUTABLE_LINKER__is_os_tp4_Debug CMakeFiles/is_os_tp4.dir/main.c.o
+build is_os_tp4: C_EXECUTABLE_LINKER__is_os_tp4_Debug CMakeFiles/is_os_tp4.dir/main.c.o | /home/cassandre/CLionProjects/is_os_tp4/libseg.a
   FLAGS = -g
+  LINK_LIBRARIES = /home/cassandre/CLionProjects/is_os_tp4/libseg.a
   OBJECT_DIR = CMakeFiles/is_os_tp4.dir
   POST_BUILD = :
   PRE_LINK = :
