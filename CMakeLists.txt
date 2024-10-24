@@ -3,4 +3,5 @@ project(is_os_tp4 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(is_os_tp4 main.c)
+add_executable(is_os_tp4 main.c
+        segdef.h)
