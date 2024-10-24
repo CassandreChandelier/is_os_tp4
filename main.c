@@ -59,7 +59,8 @@ void serveurRequest(void) {
     acq_sem(semid,seg_init);
 
     //    ** STEP 3 **
-    wait_sem(semid,res_ok);
+    acq_sem(semid, res_ok);
+    lib_sem(semid, res_ok);
 
     //    ** STEP 4 **
     long serverMean = segment1->result;
